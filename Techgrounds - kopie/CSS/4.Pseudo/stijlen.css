@@ -1,0 +1,88 @@
+.einde{
+    display: flex;
+    
+
+}
+
+
+.position {
+    width: 400px;
+    height: 200px;
+    background-color: burlywood;
+    position: relative;
+    margin: 30px;
+
+
+}
+
+
+
+
+.rondje{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin: auto; 
+    border-radius: 50%;
+}
+
+.achterbalk{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 2pt solid black;
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .achterbalk > p{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding-bottom: 20%;
+  }
+    
+
+.punt{
+    border: 2pt solid rgb(27, 139, 102);
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background-color: ivory;
+
+    
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-left: -33%;
+    margin-top: 5%;
+}
+
+.punt2{
+    border: 2pt solid rgb(27, 139, 102);
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    margin-left:70%;
+    border-radius: 50%;
+    background-color: ivory;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-left: 33%;
+    margin-top: -5%;
+}
+
+

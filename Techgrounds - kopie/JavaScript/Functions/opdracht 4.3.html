@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h2>Java opdracht 4.3</h2>
+
+    <p id="plek"></p>
+
+    <h2>4.3.2</h2>
+    <p id="plek2"></p>
+    <p id="plek3"></p>
+
+    <h2>Naam aangeven</h2>
+    <p id="plek4"></p>
+
+    <input id="myInput" type="text">
+    
+    <button onclick="myFunction5()"> Klik even hier dan  </button>
+    
+    <p id="demo3"></p>
+    
+
+
+    <script>
+
+document.getElementById("plek").innerHTML =
+Math.floor(Math.random() * 101)+ 1;
+
+document.getElementById("plek2").innerHTML=
+Math.min(0,150,400,-200,-425,300,4000)
+
+document.getElementById("plek3").innerHTML=
+Math.max(0,150,400,-200,-425,300,4000)
+
+
+function myFunction5(tekst){
+    
+      if (tekst== "Tunahan" || tekst=="Chantalle" || tekst=="Izzet" || tekst=="Frankie"){
+          console.log("Yes ")
+          
+      }
+      else{
+          console.log(" Staat niet in de groep")    
+      }
+    
+        
+}
+myFunction5("Jens")
+
+
+
+
+    </script>
+    
+</body>
+</html>

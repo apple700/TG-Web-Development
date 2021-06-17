@@ -1,0 +1,43 @@
+
+
+.na{
+    border: 2pt black solid;
+    max-width: 720px;
+    max-height: 110px;
+    background-color: coral;
+position: absolute;
+    
+}
+
+
+p{
+    background-color: green;
+    margin: auto;
+  width: 100%;
+  border: 3px solid green;
+  padding: 10px;
+}
+    
+    
+    
+    
+
+
+
+
+span.plek{
+    display: inline;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    
+}
+
+span.plek2{
+    display: inline;
+    background-color:red;
+    width: 400px;
+    height: 400px;
+}
+
+

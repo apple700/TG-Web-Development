@@ -1,0 +1,137 @@
+
+*{
+    background-color:white;
+}
+
+
+#my-Address {
+    color: red;
+    text-align: center;
+}
+
+.intro,  #my-Address {
+    color: darkmagenta;
+}
+
+.intro >#my-Address{
+    color: darkorange;
+}
+
+ul + p  {
+    color:maroon;
+    text-align: center;
+}
+
+p ~ ul   {
+    background-color: mediumturquoise;
+}
+
+p.myquote {
+    color: brown;
+}
+
+
+[id] {
+    background-color: cadetblue;
+}
+
+
+[id=Listfriends]{
+    background-color: red ;
+
+}
+
+[id$=nds]{
+    background-color: rosybrown;
+}
+
+[id |=my]{
+    background-color: black;
+}
+
+[id^= L]{
+    background-color: tan;
+}
+[id=mytuna]{
+    background-color: white;
+
+}
+
+[title~= laat]{
+    background-color: rebeccapurple;
+}
+
+[href*=w3schools]{
+    background-color: red;
+
+
+}
+
+[href*=google]{
+    background-color:darkgoldenrod;
+} 
+
+
+
+.maakt input:checked  .checkbox{
+
+
+    width: 50px;
+    height: 40px;
+    background-color: hotpink;
+    color: red;
+}
+
+
+a:active, p:active{
+    background-color: greenyellow;
+}
+
+
+p::before{
+     content: "-";
+     
+}
+
+p::after{
+    content: " - "
+
+}
+ input[type=radio]:disabled{
+     background-color: hotpink;
+ }
+
+
+
+
+
+
+/*
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+:checked
+:disabled
+:enabled
+:empty
+:focus
+p:first-child
+p::first-letter
+p::first-line
+p:first-of-type
+h1:hover
+input:in-range
+input:out-of-range
+input:invalid
+input:valid
+p:lang(it)
+p:last-child
+p:last-of-type
+tr:nth-child(even)
+tr:nth-child(odd)
+li:nth-child(1)
+li:nth-last-child(1)
+li:nth-of-type(2)
+li:nth-last-of-type(2)
+b:only-child
+h3:only-of-type
+:root
+/*

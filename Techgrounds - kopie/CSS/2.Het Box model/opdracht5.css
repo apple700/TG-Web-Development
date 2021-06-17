@@ -1,0 +1,21 @@
+.divbuiten{
+     position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #ff0000;
+    margin: auto;
+    
+    
+}
+
+.divbinnen{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: salmon;
+    top: 50%;
+    left:50%;
+    margin: -25px 0 0 -25px;   
+}
+
+

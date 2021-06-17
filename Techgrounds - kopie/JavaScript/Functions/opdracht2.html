@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="main">Veranderede tekst</p>
+<p id="main">Veranderede tekst</p>
+
+
+<button onclick="myFunction()">Klik hier </button><br>
+<h2>Tunahan Dalkran</h2>
+<h2>Zomersvakantie in de zomer</h2>
+<h2>Wintervakantie in de winter?</h2>
+
+<button onclick="myFunction1()">Klik hier </button><br>
+<p id=main1></p>
+
+
+<h2 class="main2">A heading with class="example"</h2>
+<button onclick="myFunctionEx()">Try it</button>
+
+<h3>Tunahan</h3>
+<h4>Dalkiran</h4>
+<h5>Amsterdam</h5>
+<div>Div master hier dan</div>
+<h6>Oost</h6>
+<h2>Tuna</h2>
+<button onclick="myFunction3()"> Klik hier voor queryAll </button>
+
+<p>innerText</p>
+<h2>Hier is wat tekst</h2>
+<button id="huh" onclick="myFunction4">Wat hier zit opgeslagen komt beneden ?</button>
+<p id="demo"></p>
+<script>
+
+
+    function myFunction(){
+        document.getElementsByClassName("main")
+        main[0].innerHTML= " Halloo daar "
+    }
+
+    function myFunction1(){
+        var x = document.getElementsByTagName("H2");
+        document.getElementById("main1").innerHTML = x[1].innerHTML;
+        
+    }
+    function myFunctionEx() {
+  document.querySelector(".main2").style.backgroundColor = "red";
+}
+    function myFunction3(){
+        var x = document.querySelectorAll("h3, h6, div")
+        var i ;
+        for(i =0; i< x.length; i++){
+            x[i].style.backgroundColor="red";
+        }
+    }
+    function myFunction4(){
+       var x= document.getElementById("huh").innerText;
+       document.getElementById("demo").innerText= x;
+
+    }
+
+
+</script>

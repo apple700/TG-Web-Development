@@ -1,0 +1,45 @@
+$primary-color: #f23455;
+$accent-color: #f35621;
+$text-color : white;
+$translucent-white: brown;
+$icon-square-lenght : 300px;
+$standard-border : 4px solid black;
+
+
+
+
+
+body{
+    background-color:$primary-color;
+    color: $text-color;
+
+}
+
+.slogan{
+    background-color: $translucent-white;
+}
+
+.slogan {
+    position: absolute;
+    border: $standard-border;
+    top: 200px;
+    left: 25%;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+}
+
+.slogan > span {
+    font-size: 24px;
+    line-height: 200px;
+}
+
+.container > .icon{
+    display: inline-block;
+    margin: 2%;
+    border: $standard-border;
+    font-size: 32px;
+    width: $icon-square-lenght;
+    height: $icon-square-lenght;
+}
+

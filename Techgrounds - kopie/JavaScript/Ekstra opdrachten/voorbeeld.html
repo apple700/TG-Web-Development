@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        background-color: blue;
+    }
+
+
+    #buitencirkel {
+        background: black;
+        border-radius: 50%;
+        height: 41vw;
+        width: 41vw;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 5vw;
+        box-shadow:  0 0 20px 10px lightblue;
+        border: 2em solid firebrick
+    }
+
+
+        #innercirkel {
+        position: absolute;
+        background:black;
+        border-radius: 50%;
+        height: 41vw;
+        width: 41vw;
+        margin: 0%;
+        box-shadow:  0 0 10px 5px lightblue;
+        border: 2px solid greenyellow;
+        display: flex;
+        align-items: center;
+        
+}
+
+#innercirkel > h2{
+    margin: 0 auto;
+    margin-bottom: 100%;
+    margin-top: 10vw;
+    font-size: 3vw;
+    margin-left: 13vw;
+    color: forestgreen;
+    background-color: black;
+    position: absolute;
+}
+
+p{
+    font-size: 10vw;
+    margin-left: 3vw;
+    margin-top: 5vw;
+    position: absolute;
+}
+button{
+    
+    font-size: 2.5vw;
+    border-radius: 50%;
+    height: 8vw;
+    width: 8vw;
+    margin-top: 18vw;
+    margin-left: 4vw;
+    border: 2pt solid white;
+}
+#innercirkel > button:nth-child(3){
+    background-color: greenyellow;
+
+}:nth-child(4){
+    background-color: coral;
+}
+:nth-child(5){
+    background-color: cornflowerblue
+}
+
+
+</style>
+
+
+<body>
+
+    <div class="field">
+
+        <div id="buitencirkel">
+            <div id="innercirkel">
+                <h2>BENTLEY </h2>
+                <p id= "main">00:00:00</p>
+                <button onclick="startTimer()">Start</button>
+               <button onclick="stopTimer()">Stop</button>
+                <button onclick="resetTimer()">Reset</button>
+
+            
+                
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script>
+       
+
+// var hr = 0;
+// var min = 0;
+// var sec = 0;
+// var stoptime = true;
+
+// function startTimer() {
+//   console.log("1 2 3 ")
+//     }
+
+
+// function stopTimer() {
+//     console.log("Stop timer ")
+  
+// }
+
+// function timerCycle() {
+    
+    
+
+//   }
+
+
+// function resetTimer() {
+//     console.log("Reset timer")
+// }
+
+ const timer = document.getElementById('main');
+var hr = 0;
+var min = 0;
+var sec = 0;
+var msec= 0;
+var stoptime = true;
+
+function startTimer() {
+  if (stoptime == true) {
+        stoptime = false;
+        timerCycle();
+        console.log("Start gedrukt ")
+    }
+}
+function stopTimer() {
+  if (stoptime == false) {
+    stoptime = true;
+    console.log( "Stop gedrukt")
+  }
+}
+function timerCycle() {
+    if (stoptime == false) {
+    sec = parseInt(sec);
+    min = parseInt(min);
+    hr = parseInt(hr);
+    msec= parseInt(msec)
+    
+
+    sec = sec + 1;
+
+    if(msec== 100)
+    sec = sec + 1;
+    msec = 0;  
+
+    if (sec == 60) {
+      min = min + 1;
+      sec = 0;
+    }
+    if (min == 60) {
+      hr = hr + 1;
+      min = 0;
+      sec = 0;
+    }
+
+    if (sec < 10 || sec == 0) {
+      sec = '0' + sec;
+    }
+    if (min < 10 || min == 0) {
+      min = '0' + min;
+    }
+    if (hr < 10 || hr == 0) {
+      hr = '0' + hr;
+    }
+
+    timer.innerHTML = hr + ':' + min + ':' + sec;
+
+    setTimeout("timerCycle()", 10 );
+
+
+  }
+}
+    function resetTimer() {
+    timer.innerHTML = "00:00:00";
+    stoptime = true;
+    hr = 0;
+    sec = 0;
+    min = 0;
+    console.log("Timer gereset ")
+}
+
+
+    </script>
+
+</body>
+
+</html>

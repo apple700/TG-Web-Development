@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            transition-property: left;
+            animation-duration: 2s;
+            animation-delay: both;
+        }
+        
+        .content {
+            height: 25vw;
+            width: 25vw;
+            border: 1vw solid black;
+            position: relative;
+            animation-duration: 4s;
+            animation-iteration-count:inherit;
+            transition: background-color 2s;
+            background-color: white;
+            animation-name: drive1;
+            animation-iteration-count: 20;
+        }
+
+        @keyframes drive1{
+            10%{background: white;}
+            50%{background: red;}
+            100%{background: white;}
+
+
+        }
+        
+        img {
+            width: 25vw;
+            height: 20vw;
+            opacity: 0.3;
+        }
+
+        div {
+            height: 25vw;
+            width: 25vw;
+            background-color: red;
+            position: absolute;
+            top: 0px;
+
+        }
+
+        .content:hover .content {
+            opacity: 0.5;
+            background-color: blue;
+        }
+        
+
+        .content:hover  >  div  {
+            transition: 1s;
+            transform: rotate(45deg);
+            margin-top: 300px;
+            margin-left: 200px;
+           
+
+        }
+        
+
+        body:hover > .content > div {
+            transition: 1s;
+            transform: rotate(-45eg);
+            margin-bottom: 300px;
+            margin-right: 200px;
+        }
+    
+        .content>h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class=content>
+        <h2> Amsterdam</h2>
+        
+        <img src="hallo.jpg" alt="">
+
+
+        <div></div>
+
+    </div>
+
+</body>
+
+</html>

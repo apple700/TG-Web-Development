@@ -1,0 +1,12 @@
+body {
+  background-color: #665e5e;
+}
+
+button {
+  background-color: red;
+}
+
+button:hover {
+  background-color: blue;
+}
+/*# sourceMappingURL=main.css.map */

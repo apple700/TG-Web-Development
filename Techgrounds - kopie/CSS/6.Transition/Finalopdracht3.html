@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.container{
+    max-width: 700px;
+    height: 700px;
+    background-color: paleturquoise;
+   
+
+}
+.container > .object {
+   top: 50%;
+   left: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(189, 154, 59);
+    border: 2pt solid black;
+    margin:2px;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+    animation-direction: alternate;
+
+}
+
+.container:hover .move-right1{
+    animation-name: drive1;
+    animation-duration: 7s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes drive1 {
+    from{transform: translateX(0px);}
+
+    50% {
+        transform: translateX(650px);
+        border-radius: 50%;
+        background-color: white;
+    }
+    to
+    {transform: translateX(0px);
+
+    }
+}
+
+.container:hover .move-right2{
+    animation-name: drive2;
+    animation-duration: 7s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes drive2 {
+    from{transform: translateX(0px);
+        
+    
+    }
+
+    50% {
+        transform: translateX(650px);
+        border-radius: 10px;
+        background: white;
+        }
+    
+
+    to{transform: translateX(0px);
+    }
+}
+
+.container:hover .move-right3{
+    animation-name: drive3;
+    animation-duration: 7s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes drive3 {
+    from{transform: translateX(0px);}
+
+    25%{
+        transform:translateX(300px);
+    }
+
+    50% {
+        transform: translateX(650px);
+        animation-delay: 1s;
+        background-color: white;
+        
+    }
+    75%{
+        transform:translateX(300px);
+    }
+    
+
+    to
+    {transform: translateX(0px);
+
+    }
+}
+.container:hover .move-right4{
+    animation-name: drive4;
+    animation-duration: 7s;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    
+}
+
+@keyframes drive4 {
+    from{transform: translateX(0px);}
+
+    50% {
+        transform: translateX(650px);
+        border-radius: 10px;
+        background: white;
+}
+
+    to{transform: translateX(0px); animation-delay: 1s;}
+}
+
+.container:hover .move-right5{
+    animation-name: drive5;
+    animation-duration: 7s;
+    animation-direction: alternate;
+    
+}
+
+@keyframes drive5 {
+    from{transform: translateX(0px);}
+
+    15%{
+        transform:translateX(250px)}
+
+    30% {
+        transform: translate(-8px);
+        border-radius: 10px;
+        }
+
+    50%{transform:translateX(650px);background: white;}
+        
+    65%{transform:translatex(250px);}
+
+    80%{transform:translateX(350px); }
+
+    100%{transform: translateX(0px);}
+
+
+
+
+
+
+
+
+    to{transform: translateX(0px); animation-delay: 1s; }
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="object  move-right1"></div>
+        <div class="object  move-right2"></div>
+        <div class="object  move-right3"></div>
+        <div class="object  move-right4"></div>
+        <div class="object  move-right5"></div>
+        
+
+
+
+    </div>
+</body>
+</html>

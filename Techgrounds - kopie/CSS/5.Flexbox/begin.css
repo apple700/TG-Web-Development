@@ -1,0 +1,19 @@
+
+.containerflex{
+    display: flex;
+    background-color: lightblue;
+    justify-content: flex-end;
+
+    
+}
+
+.containerflex > div{
+    width: 30px;
+    height: 30px;
+    background-color: lawngreen;
+    border: 2pt black solid;
+    padding: 30px;
+    margin: 30px;
+    
+}
+

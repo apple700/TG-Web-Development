@@ -1,0 +1,20 @@
+.container {
+    width: 700px;
+    height: 100%;
+    border: black solid 2pt;
+    margin: auto;
+}
+
+p{
+    border: black 2pt solid;
+    background-color: green;
+    height: 100%;
+    margin:0px;
+    padding: 20px;
+}
+
+div{
+    height: 20px;
+    background-color: white;
+    
+}

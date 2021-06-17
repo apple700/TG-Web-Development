@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="opdracht1.js" defer></script>
+</head>
+<body>
+    <h4>Javascript Functions 1</h4><BR>
+
+   
+
+     <button id="demo" onclick="myFunction()"> Klik hier </button>
+
+     <p id="x"> Probeer hier eens ?</p>
+     <button onclick="buttonFunctie()" style="background-color: aqua;"> Wel hier klikken dan !</button>
+
+
+<p> 4.1D</p>
+<input type="text" name="fname" id="fname">
+<button onclick="functione()"> Klik</button><br>
+
+Voer in :
+<input onblur="findTotal1()" type="text" name="cijfer" id="cijfer1"/><br>
+
+<br><br>
+Ingevoerde cijfer :  <input type="text" name="total" id="total1"/><br><br>
+
+Qty1 : <input onblur="findTotal()" type="text" name="qty" id="qty1"/><br>
+Qty2 : <input onblur="findTotal()" type="text" name="qty" id="qty2"/><br>
+Qty3 : <input onblur="findTotal()" type="text" name="qty" id="qty3"/><br>
+
+
+
+<br><br>
+Total : <input type="text" name="total" id="total"/>
+<br>
+
+
+
+    <b id="firstValue">10</b>
+    <button type="button" onclick="addTheValue(10)">Sum </button>
+    <script>
+       function addTheValue(secondValue) {
+          var fValue = document.getElementById("firstValue");
+          firstValue.innerHTML =  firstValue.innerHTML *2
+          parseInt(secondValue);
+       }
+    </script>
+    </body>
+    </html>
+<script>
+
+function findTotal1(){
+        var arr = document.getElementsByName('cijfer');
+        var tot=0;
+        for(var i=0;i<arr.length;i++){
+            if(parseInt(arr[i].value))
+                tot += parseInt(arr[i].value);
+        }
+        document.getElementById('total1').value = tot;
+    }
+    
+        
+
+
+
+
+    function findTotal(){
+        var arr = document.getElementsByName('qty');
+        var tot=0;
+        for(var i=0;i<arr.length;i++){
+            if(parseInt(arr[i].value))
+                tot += parseInt(arr[i].value);
+        }
+        document.getElementById('total').value = tot;
+    }
+    
+        </script>
+</body>
+</html>

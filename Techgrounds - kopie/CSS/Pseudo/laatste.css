@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    margin: 40px;
+    position: relative;
+}
+
+
+.vierkant{
+    position: absolute;
+    height: 80px;
+    margin:20px;
+    width: 80px;
+    background-color: red;
+}
+
+.vierkant1{
+    position: absolute;
+    height: 80px;
+    margin:20px;
+    width: 80px;
+    background-color: lawngreen;
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+.vierkant2{
+    position: absolute;
+    height: 80px;
+    margin:20px;
+    width: 80px;
+    background-color: blue;
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+}

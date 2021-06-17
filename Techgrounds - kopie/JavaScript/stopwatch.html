@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <style>
+.container{
+    width: 40vw;
+    height: 40vw;
+    background-color: rgb(101, 101, 110);
+    position: relative;
+}
+
+.binnenkant{
+    width: 90%;
+    height: 30vw;
+    background-color:brown;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+
+
+    }
+    .binnenkant > div {
+    background-color: #f1f1f1;
+  margin: 50px;
+  padding: 20px;
+  font-size: 20px;
+
+    }
+    .binnenkant > div:nth-child(1){
+        width: 15vw;
+        margin-left: 150px;
+    }
+    .binnenkant > .knoppen{
+        display: flex;
+
+
+        
+    }
+    .binnenkant > .knoppen > div{
+        height: 20px;
+        width: 120px;
+        border: 2pt solid black;
+        margin: 20px;
+        text-align: center;
+        top:50%;
+        border-radius: 50%;
+    }
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="binnenkant">
+            <div>MX-TUN X6</div>
+            <div>TIMER KOMT HIER</div>
+            <div class="knoppen">  
+                <div>Start</div>
+                <div>Stop</div>
+                <div>Pauze</div>
+                <div>Pauze</div>
+                <div>Pauze</div>
+             
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    
+
+</body>
+</html>

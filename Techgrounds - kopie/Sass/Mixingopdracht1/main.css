@@ -1,0 +1,22 @@
+.button {
+  color: red;
+  background-color: cadetblue;
+}
+
+.button:hover {
+  background-color: forestgreen;
+  color: greenyellow;
+}
+
+div {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+}
+
+div:hover {
+  background-color: orange;
+  -webkit-transition-duration: 4s;
+          transition-duration: 4s;
+}
+/*# sourceMappingURL=main.css.map */

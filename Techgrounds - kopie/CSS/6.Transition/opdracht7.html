@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+div{
+    width: 300px;
+    height: 300px;
+    margin : 100px auto ;
+    background-color: red;
+    transition: all 1s linear;
+    animation: drive1 ;
+    animation-duration: 4s;
+    
+}
+
+@keyframes drive1{
+0%{transform: rotate(45deg);
+    
+    background-color: blueviolet;
+    
+}
+25%{
+    background-color: blue;
+    transform: rotate(90deg);
+    border-top-right-radius: 50%;
+   
+    
+   
+}
+50%{
+    
+    background-color: black;
+    transform: rotate(135deg);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+
+    
+}
+75%{
+    background-color: blueviolet;
+    transform: rotate(180deg);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+
+}
+100%{
+    background-color: blueviolet;
+    transform: rotate(225deg);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+}
+
+    
+}
+
+
+    
+
+
+</style>
+<body>
+    
+
+<h1>CSS ANIMATIE </h1>
+<div></div>
+</body>
+</html>

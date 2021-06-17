@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        position: relative;
+
+    }
+
+    .kaart {
+        width: 20vw;
+        height: 40vw;
+        background-color: grey;
+        color: white;
+        border-radius: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 1vw;
+        margin-top: 1vw;
+        border: 1pt solid black;
+        margin-right: -10vw;
+
+
+
+}
+
+.kaart.eerste:hover  {
+    margin-right: 0vw;
+    transition-duration: 2s; 
+}
+.kaart.eerste:hover ~.kaart {
+    color: red;
+    transition-duration: 2s;  
+    animation-name: drive1;
+    
+}
+
+
+.kaart.tweede:hover {
+    margin-left: 0vw;
+    margin-right:0vw;
+    transition-duration: 2s;
+}
+
+.kaart.tweede:hover ~.kaart {
+    color: red;
+    transition-duration: 2s;
+     
+    
+}
+
+
+
+.kaart.derde:hover {
+    margin-left: 0vw;
+    margin-right:0vw;
+    transition-duration: 2s;
+}
+.kaart.derde:hover ~.kaart {
+    color: red;
+    transition-duration: 2s; 
+}
+
+
+
+
+.kaart.vierde:hover {
+    margin-left: 0vw;
+    margin-right:0vw;
+    transition-duration: 2s;
+}
+.kaart.vierde:hover ~.kaart {
+    color: red;
+    transition-duration: infinite; 
+}
+
+    .kaart > div {
+        width: 100%;
+        height: 33.3%;
+        font-size: large;
+        text-align: center;
+}
+
+            .kaart div:nth-child(3) {
+        padding-top: 50%;
+}
+
+
+                    .kaart>div:nth-child(2) {
+        background-image: url(jj.jpg);
+        opacity: 0.5;
+}
+
+                            .kaart>div:nth-child(1) {
+        font-size: 3vw;
+}
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="kaart eerste">
+            <div>Gordijnen 2020</div>
+            <div>Grand Carpe Diem 2020</div>
+            <div>Author Tunahan Dalkiran </div>
+
+        </div>
+
+        <div class="kaart tweede">
+            <div>Gordijnen 2020</div>
+            <div>Grand Carpe Diem 2020</div>
+            <div>Author Tunahan Dalkiran </div>
+
+        </div>
+
+        <div class="kaart derde">
+            <div>Gordijnen 2020</div>
+            <div>Grand Carpe Diem 2020</div>
+            <div>Author Tunahan Dalkiran </div>
+
+        </div>
+
+        <div class="kaart vierde">
+            <div>Gordijnen 2020</div>
+            <div>Grand Carpe Diem 2020</div>
+            <div>Author Tunahan Dalkiran </div>
+
+        </div>
+
+
+
+</body>
+
+</html>

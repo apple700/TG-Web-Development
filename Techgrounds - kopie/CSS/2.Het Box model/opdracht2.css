@@ -1,0 +1,40 @@
+.blokje{
+    border: 2pt black solid ;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding:5px;
+    border-width: 5px;
+    background-color: grey;
+}
+
+.blokjes{
+    width: 80px;
+    height: 70px;
+    margin: 5px;
+    padding: 5px;
+    background-color: red;
+}
+
+.blokjess{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    background-color: blueviolet;
+    overflow: scroll;
+}
+
+
+.blokjesss{
+    width: 90px;
+    height: 70px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rosybrown;
+    overflow:auto;
+}
+
+
+
+

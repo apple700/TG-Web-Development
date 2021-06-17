@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.container{
+    width: 700px;
+    height: 700px;
+    background-color: indianred;
+    position: relative;
+}
+.container > .object {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: indigo;
+    position: absolute;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+}
+
+
+
+.van {
+    top: 45%;
+    left: 0%;
+}
+
+.container:hover .move-right{
+    transform: translate(700px,0);
+    -webkit-transform: translate(700px,0); /** Chrome & Safari **/
+    -o-transform: translate(700px,0); /** Opera **/
+    -moz-transform: translate(700px,0); /** Firefox **/
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="object van move-right"></div>
+
+
+
+    </div>
+</body>
+</html>

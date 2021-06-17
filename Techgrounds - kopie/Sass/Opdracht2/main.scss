@@ -1,0 +1,17 @@
+@import "_colors";
+
+body{
+    background-color: $primary-color;
+
+   
+}
+
+button{
+    background-color: $secundary-color;
+    &:hover {
+        background-color: $button-color;
+    }
+}
+
+ 
+

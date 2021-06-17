@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+*{
+    width: 1000px;
+}
+body  div {
+	background: rgb(185, 18, 171);
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+ div > div {
+	flex-grow: 1;
+	width: 33%;
+	height: 300px;
+    border-radius: 50px;
+    font-size: 70px;
+    text-align: center;
+    align-items: center;
+    background: salmon;
+    
+    
+
+}
+div::first-letter{
+    font-size: 90px;
+}
+.een > :nth-child(1) {
+	background: rgb(22, 22, 18);
+}
+
+
+
+
+.een:nth-child(2) {
+	background: rgb(192, 192, 38);
+}
+:nth-child(3) {
+	background: rgb(11, 42, 109);
+}
+ :nth-child(4) {
+	background: rgb(44, 44, 2);
+}
+
+div:nth-child(5) {
+	background: rgb(17, 137, 158);
+    color: white;
+}
+div:nth-child(6) {
+	background-image: linear-gradient(red, blue);
+}
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="een">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+.container{
+    max-width: 700px;
+    max-height: 700px;
+    background-color: burlywood;
+}
+.end:before{
+    content: "   ";
+    display: block;
+    float: right;
+    background-color: blue;
+    height: 10px;
+    width: 40%;
+    margin-top: 90px;
+   
+}
+
+.end:after{
+    content: "   ";
+    display: block;
+    background-color: rgb(17, 19, 17);
+    width: 10px;
+    height: 100px;
+    
+}
+
+.chan:after{
+    content: "   ";
+    display: block;
+    background-color: red!important;
+    width: 10px;
+    height: 100%;
+}
+.chan:before{
+    content: "   ";
+    display: block;
+    background-color: blue;
+    height: 10px;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

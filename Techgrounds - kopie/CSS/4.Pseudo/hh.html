@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+.chan {
+
+    width: 700px;
+    height: 400px;
+    background-color: burlywood;
+    width: 100%;
+    background-color: cadetblue;
+    position: relative;
+    border: 5px solid black;
+}
+
+
+.chan::before{
+    content: " ";
+    display: inline-block;
+    background-color:red;
+    height: 10px;
+    width: 40%;
+    position: absolute;
+}
+.chan::after{
+    content: " ";
+    display: inline-block;
+    background-color:red;
+    height: 30%;
+    width: 10px;
+    position: absolute;
+}
+
+.chan1::before{
+    content: " ";
+    display: inline-block;
+    background-color:red;
+    height: 10px;
+    width: 40%;
+    position: absolute;
+    top: 90%;
+}
+.chan1::after{
+    content: " ";
+    display: inline-block;
+    background-color:red;
+    height: 100%;
+    width: 10px;
+    position: relative;
+}
+
+
+
+</style>
+</head>
+<body>
+    
+        <div class= "chan"></div>
+        <div class= "chan1"></div>
+                
+            </div>
+            </div>
+      
+    
+</body>
+</html>

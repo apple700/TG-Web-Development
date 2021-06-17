@@ -1,0 +1,34 @@
+@mixin important {
+    color: red;
+    background-color: cadetblue;
+    &:hover{
+        background-color: forestgreen;
+        color: greenyellow;
+    }
+}
+
+.button{
+    @include important ();
+        
+    }
+
+
+    @mixin div {
+        background-color: blue;
+        width: 50px;
+        height: 50px;
+        
+
+        &:hover {
+            background-color: orange;
+            transition-duration: 4s;
+        }
+
+    }
+    div{
+        @include div();
+        
+        
+    }
+
+    

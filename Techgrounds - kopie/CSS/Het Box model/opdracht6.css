@@ -1,0 +1,28 @@
+.b {
+    display: inline-block;
+    color:rgb(158, 132, 132);
+}
+
+h4{
+    color: yellow
+}
+
+h3{
+color: blue;
+
+}
+
+.container{
+    position: relative;
+    font-family: Arial;
+}
+
+.tekstbox {
+    position: absolute;
+    padding: 15px;
+    border: 2pt black solid;
+    bottom: 50%;
+    right: 80px;
+    font-size: 30px;
+    opacity: 0.8;
+}
