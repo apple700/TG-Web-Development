@@ -1,0 +1,81 @@
+.navbar{
+    position: relative;
+    max-width: 100%;
+    height: 110px;
+    border: solid 2pt black;
+    padding: auto;
+
+}
+
+.content{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    border: 1pt black solid;
+    display: flex;
+}
+
+.tekst{
+    position: absolute;
+    width: 82%;
+    height: 100%;
+    border: solid 1pt black;
+}
+
+.prob{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    border: solid 2pt black;
+}
+.slideshow{
+    position: absolute;
+    width: 75%;
+    border: 2pt black solid;
+    height: 100%;
+
+}
+.slideshow > h1{
+    position: absolute;
+    border: 2pt solid black;
+    width: 110px;
+    height: 60px;
+    margin-left: 80%;
+}
+.tekstrechts{
+    border: 2pt solid black;
+    position:absolute;
+    width: 25%;
+    margin-left: 75%;
+    height: 11000px;
+}
+
+.plek{
+    position: relative;
+    width: 75%;
+    border: 2pt black solid;
+    height: 700px;
+    background:blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rondjes {
+    border: 2pt black;
+    width: 130px;
+    height: 130px;
+    background: green;
+    margin: 40px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.slidekleding{
+    border: 2pt black solid;
+    position: relative;
+    width: 75%;
+    height: 300px;
+
+    
+}
