@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+
+            width: 900px;
+            height: 700px;
+
+            flex-direction: column;
+
+            position: absolute;
+
+
+        }
+
+        div {
+            height: 500px;
+            background-color: lightblue;
+
+            position: relative;
+
+        }
+
+        [class^="begin"] {
+            width: 100%;
+            font-size: 30px;
+            font-family: cursive;
+            text-align: center;
+            border: 0.2vw solid brown;
+            margin: 0.33vw;
+        }
+
+        .begin1 {
+            height: 20%;
+            width: 10vw;
+            left: 45%;
+
+        }
+
+        .begin2 {
+            height: 130%;
+            border-radius: 5vw;
+        }
+
+        #heen {
+            position: absolute;
+        }
+
+        #terug {
+            position: absolute;
+            margin-left: 20vw;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex">
+        <div class="begin"> Math problem</div>
+        <div class="begin1">
+           <b id="firstValue">1</b><b> / 6</b>
+           
+
+
+
+
+        </div>
+        <div class="begin2"> Vragen <br>
+            <b id="firstValueSom"></b> <br>
+            <b id="secondValueSom"></b>
+
+        </div>
+        <div class="begin3">Antwoord 1</div>
+        <div class="begin4"> Anwoordt 2</div>
+        <div class="begin5"> Antwoord 3</div>
+        <div class="begin6"> Antwoord 4</div>
+
+        <button onclick="buttonClick()" id="heen"> Volgende</button>
+        <button onclick="buttonTweedeClick()" id="terug"> Vorige</button>
+
+
+       
+   
+    <script>
+       function addTheValue(secondValue) {
+          var fValue = document.getElementById("firstValueSom");
+          firstValue.innerHTML =  firstValue.innerHTML=++i;
+    
+       }
+       </script>
+    
+
+
+        <script>
+         
+            let char=[ "+" , "-" , "*"]
+           consol
+
+
+
+
+
+            firstValueSom.innerHTML= Math.floor(Math.random() * 99 ) + 1;
+            secondValueSom.innerHTML= Math.floor(Math.random() * 99 ) + 1;
+
+           
+            let eersteValueEersteVraag= firstValueSom;
+            let tweedeValueEersteVraag= secondValueSom;
+            console.log(eersteValueEersteVraag )
+            console.log(tweedeValueEersteVraag)
+
+
+
+
+            var i = 0;
+            var z = 0;
+            terug.disabled=true;
+
+
+            function buttonClick() {
+
+
+          var fValue = document.getElementById("firstValue");
+          firstValue.innerHTML =  firstValue.innerHTML=++i;
+          firstValueSom.innerHTML= Math.floor(Math.random() * 99 ) + 1;
+            secondValueSom.innerHTML= Math.floor(Math.random() * 99 ) + 1;
+
+               
+
+                if (i > 1){
+                    terug.disabled = false;
+                }
+
+                if (i == 6) {
+
+                    heen.disabled = true;
+                    console.log("hello")
+
+
+                }
+            }
+
+
+            function buttonTweedeClick() {
+                firstValue.innerHTML =  firstValue.innerHTML=--i;
+                
+
+               
+                
+                if (i < 6) {
+                    terug.disabled = false;
+                    heen.disabled = false;
+                }
+                if (i == 1) {
+                    terug.disabled = true;
+                }
+
+
+            }
+
+
+
+        </script>
+
+</body>
+
+</html>
