@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+
+            width: 900px;
+            height: 700px;
+
+            flex-direction: column;
+
+            position: absolute;
+
+
+        }
+
+        div {
+            height: 500px;
+            background-color: lightblue;
+
+            position: relative;
+
+        }
+
+        [class^="begin"] {
+            width: 100%;
+            font-size: 30px;
+            font-family: cursive;
+            text-align: center;
+            border: 0.2vw solid brown;
+            margin: 0.33vw;
+        }
+
+        .begin1 {
+            height: 20%;
+            width: 10vw;
+            left: 45%;
+
+        }
+
+        .begin2 {
+            height: 130%;
+            border-radius: 5vw;
+        }
+
+        #heen {
+            position: absolute;
+        }
+
+        #terug {
+            position: absolute;
+            margin-left: 20vw;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex">
+        <div class="begin"> Math problem</div>
+        <div class="begin1">
+           <b id="firstValue">1</b><b> / 6</b>
+           
+
+
+
+
+        </div>
+        <div class="begin2"> Vragen <br>    
+            <b id="firstValueSom"></b> 
+            <b id ="char"></b> 
+            <b id="secondValueSom"></b>
+
+        </div>
+        <div class="begin3" onclick="functieUitvoer()">Antwoord 1 <br>
+            <b id="sumValue"></b> <br>
+
+
+
+
+        </div>
+        <div class="begin4"> Anwoordt 2 <br>
+            <b id="sumValue1"></b> <br>
+
+
+
+        </div>
+        <div class="begin5"> Antwoord 3 <br>
+            <b id="sumValue2"></b> <br>
+
+
+        </div>
+
+        <div class="begin6"> Antwoord 4 <br>
+            <b id="sumValue3"></b> <br>
+
+
+        </div>
+
+        <button onclick="buttonClick()" id="heen"> Volgende</button>
+        <button onclick="buttonTweedeClick()" id="terug"> Vorige</button>
+
+
+       
+   
+    <script>
+      
+         
+            let char=[ "+" , "-" , "*" , "/"];
+
+            let randomChar= Math.floor(Math.random() * char.length ) ;
+            console.log(randomChar)
+            console.log(char[randomChar])
+            document.getElementById('char').innerHTML= (char[randomChar])
+            
+
+            firstValueSom.innerHTML= Math.floor(Math.random() * 99 ) + 1;
+            secondValueSom.innerHTML= Math.floor(Math.random() * 99 ) + 1;
+
+            let randomNummerGenerator=Math.floor(Math.random()* 1000) +1;
+            console.log(randomNummerGenerator)
+
+
+           
+            let eersteValueEersteVraag= firstValueSom;
+            let tweedeValueEersteVraag= secondValueSom;
+
+
+            console.log(Number(eersteValueEersteVraag.innerText))
+            console.log(Number(tweedeValueEersteVraag.innerText))
+
+
+
+
+            var arr = [];
+            while(arr.length < 3){
+             var r = Math.floor(Math.random() * 100) + 1;
+             if(arr.indexOf(r) === -1) arr.push(r);
+}
+            console.log(arr);
+
+
+
+
+            if(randomChar==0){
+                let sum = Number(eersteValueEersteVraag.innerText) + Number( tweedeValueEersteVraag.innerText);
+            console.log(Number(sum))
+            
+        
+            sumValue.innerHTML= (Number(sum))
+            sumValue1.innerHTML=(arr[0])
+            sumValue2.innerHTML=(arr[1])
+            sumValue3.innerHTML=(arr[2])
+            
+
+              
+            }
+            if(randomChar==1){
+                let sum = Number(eersteValueEersteVraag.innerText) - Number( tweedeValueEersteVraag.innerText);
+            console.log(Number(sum))
+            sumValue.innerHTML= (Number(sum))
+            sumValue1.innerHTML=(arr[0])
+            sumValue2.innerHTML=(arr[1])
+            sumValue3.innerHTML=(arr[2])
+          
+        
+            }
+
+            if(randomChar==2){
+                let sum = Number(eersteValueEersteVraag.innerText) * Number( tweedeValueEersteVraag.innerText);
+            console.log(Number(sum))
+            sumValue.innerHTML= (Number(sum))
+
+                  
+            var arr = [];
+            while(arr.length < 3){
+             var r = Math.floor(Math.random() * 10000) + 50;
+             if(arr.indexOf(r) === -1) arr.push(r);
+}
+         
+
+
+
+            sumValue1.innerHTML=(arr[0])
+            sumValue2.innerHTML=(arr[1])
+            sumValue3.innerHTML=(arr[2])
+            
+
+    
+            }
+
+            
+            if(randomChar==3){
+                let sum = Number(eersteValueEersteVraag.innerText) / Number( tweedeValueEersteVraag.innerText);
+            console.log(Number(sum))
+            sumValue.innerHTML= (Number(sum))
+
+    
+
+            
+          
+            var arr = [];
+            while(arr.length < 3){
+             var r = (Math.random() * 100) + 1;
+             if(arr.indexOf(r) === -1) arr.push(r);
+}
+            console.log(arr);
+
+            
+            sumValue1.innerHTML=(arr[0])
+            sumValue2.innerHTML=(arr[1])
+            sumValue3.innerHTML=(arr[2])
+}
+        
+
+
+            var i = 0;
+            var z = 0;
+            terug.disabled=true;
+
+
+            function buttonClick() {
+
+
+          var fValue = document.getElementById("firstValue");
+          firstValue.innerHTML =  firstValue.innerHTML=++i;
+          firstValueSom.innerHTML= Math.floor(Math.random() * 99 ) + 1;
+            secondValueSom.innerHTML= Math.floor(Math.random() * 99 ) + 1;
+
+            var arr = [];
+            while(arr.length < 3){
+             var r = Math.floor(Math.random() * 100) + 1;
+             if(arr.indexOf(r) === -1) arr.push(r);
+}
+            console.log(arr);
+
+
+                if (i > 1){
+                    terug.disabled = false;
+                }
+
+                if (i == 6) {
+
+                    heen.disabled = true;
+                    console.log("hello")
+
+
+                }
+            }
+
+
+            function buttonTweedeClick() {
+                firstValue.innerHTML =  firstValue.innerHTML=--i;
+                
+
+               
+                
+                if (i < 6) {
+                    terug.disabled = false;
+                    heen.disabled = false;
+                }
+                if (i == 1) {
+                    terug.disabled = true;
+                }
+
+
+            }
+
+            function functieUitvoer() {
+                let correctAntwoord=sumValue.innerHTML;
+                if(Number(sumValue.innerHTML==correctAntwoord)){
+                    console.log("Goedzo")
+                    document.getElementById("sumValue").style.background='green';
+                    document.getElementById("sumValue").style.color='white';
+                    document.getElementById("sumValue1").style.background='red';
+                    document.getElementById("sumValue2").style.background='red';
+                    document.getElementById("sumValue3").style.background='red';
+                    document.getElementById("sumValue4").style.background='red';
+                }
+
+                
+            }
+        
+
+
+
+        </script>
+
+</body>
+
+</html>
